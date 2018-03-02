@@ -5,7 +5,49 @@ Opencart 3 modification (OCMOD) that adds structured data mark-up for breadcrumb
 There are two different version with Microdata and RDFa mark-up.
 
 #### Features
-1. Adds structured data markup to breadcrumbs (Microdata and RDFa markup)
+1. Adds structured data mark-up to breadcrumbs (Microdata or RDFa)
+    * RDFa mark-up:
+    ```
+    <ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
+        <li property="itemListElement" typeof="ListItem">
+            <a href="http://site.name/" property="item" typeof="WebPage">
+                <span property="name"><i class="fa fa-home"></i></span>
+            </a>
+            <meta property="position" content="1">
+        </li>
+        <li property="itemListElement" typeof="ListItem">
+            <a href="http://site.name/category" property="item" typeof="WebPage">
+                <span property="name">Category</span>
+            </a>
+            <meta property="position" content="2">
+        </li>
+        <li property="itemListElement" typeof="ListItem">
+            <span property="name">Product</span>
+            <meta property="position" content="3">
+        </li>
+    </ul>
+    ````
+    * Microdata mark-up:
+    ```
+    <ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a href="https://site.name/" itemprop="item">
+                <span itemprop="name"><i class="fa fa-home"></i></span>
+            </a>
+            <meta itemprop="position" content="1">
+        </li>
+        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a href="https://site.name/category" itemprop="item">
+                <span itemprop="name">Category</span>
+            </a>
+            <meta itemprop="position" content="2">
+        </li>
+        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <span itemprop="name">Product</span>
+            <meta itemprop="position" content="3">
+        </li>
+    </ul>
+    ```
 2. Removes crumbs for the target pages that lead to themselves.
 
 #### List of mofified files
