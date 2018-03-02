@@ -96,12 +96,12 @@ There are two different version with Microdata and RDFa mark-up.
 
 #### Install
 * To begin, make backup, really, despite the fact that it is OCMOD!
-* Download [bin/breadcrumbs-seo-microdata.zip](https://github.com/underr-ua/oc3-breadcrumbs-seo/raw/master/bin/breadcrumbs-seo-microdata.zip) or [bin/breadcrumbs-seo-rdfa.zip](https://github.com/underr-ua/oc3-oc3-breadcrumbs-seo/raw/master/bin/breadcrumbs-seo-rdfa.zip)
+* Download [bin/breadcrumbs-seo.zip](https://github.com/underr-ua/oc3-breadcrumbs-seo/raw/master/bin/breadcrumbs-seo.zip)
 * Unpack it
 * Go to your OpenCart Admin Panel and open Extensions menu
 * Open Installer
 * Click the Upload button
-* Find, select and upload the breadcrumbs-seo-microdata.ocmod.zip or breadcrumbs-seo-rdfa.ocmod.zip file
+* Find, select and upload the *breadcrumbs-seo-microdata.ocmod.zip* or *breadcrumbs-seo-rdfa.ocmod.zip* file
 * See the "Success: You have modified extensions!" message
 * Go to Extensions > Modifications > [Refresh] button
 * Go to Dashboard > [Developer Settings] button > [Action] button
