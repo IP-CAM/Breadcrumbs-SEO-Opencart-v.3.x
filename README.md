@@ -50,7 +50,7 @@ There are two different version with Microdata and RDFa mark-up.
     ```
 2. Removes crumbs for the target pages that lead to themselves.
 
-#### List of mofified files
+#### List of modified files
 * catalog/view/theme/*/template/product/search.twig
 * catalog/view/theme/*/template/product/category.twig
 * catalog/view/theme/*/template/product/special.twig
