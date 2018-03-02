@@ -4,7 +4,7 @@
 Opencart 3 modification (OCMOD) that adds structured data mark-up for breadcrumbs.
 There are two different version with Microdata and RDFa mark-up.
 
-Tested with Opencart 3.0.2.0 only, but should be work with all OC 3.x
+Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 
 #### Features
 1. Adds structured data mark-up to breadcrumbs (Microdata or RDFa)
