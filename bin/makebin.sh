@@ -19,9 +19,13 @@ rm -f install.xml
 mv breadcrumbs-seo-microdata.ocmod.zip ../bin/
 mv breadcrumbs-seo-rdfa.ocmod.zip ../bin/
 
+# make breadcrumbs-seo.zip
+
 cd ../bin/
 
 zip -9 -r breadcrumbs-seo.zip breadcrumbs-seo-microdata.ocmod.zip breadcrumbs-seo-rdfa.ocmod.zip LICENSE README.md
+
+# clean
 
 rm -f LICENSE
 rm -f README.md
