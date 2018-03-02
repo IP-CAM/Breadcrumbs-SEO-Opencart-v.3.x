@@ -73,7 +73,7 @@ There are two different version with Microdata and RDFa mark-up.
 
 #### Links
 * [github.com](https://github.com/underr-ua/oc3-breadcrumbs-seo/)
-* [opencart.com](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=33296)
+* [opencart.com](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=33396)
 * [underr.space](https://underr.space/notes/projects/project-002.html)
 
 #### Donation
