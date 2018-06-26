@@ -13,7 +13,8 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 
 ## Install
 * To begin, make backup, really!
-* Download zip-file : [bin/breadcrumbs-seo.ocmod.zip](https://github.com/underr-ua/ocmod3-breadcrumbs-seo/raw/master/bin/breadcrumbs-seo.ocmod.zip)
+* Download zip-file : [bin/breadcrumbs-seo-microdata.ocmod.zip](https://github.com/underr-ua/ocmod3-breadcrumbs-seo/raw/master/bin/breadcrumbs-seo-microdata.ocmod.zip)
+    or [bin/breadcrumbs-seo-rdfa.ocmod.zip](https://github.com/underr-ua/ocmod3-breadcrumbs-seo/raw/master/bin/breadcrumbs-seo-rdfa.ocmod.zip)
 * Open OpenCart Admin Panel
 * Extensions > Installer > [Upload]: open the file
 * See the "Success: You have modified extensions!" message
@@ -24,7 +25,7 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 ## Uninstall
 * Make backup
 * OpenCart Admin -> Extensions menu > Installer
-* Extensions > Install History: find breadcrumbs-seo.ocmod.zip and click [Uninstall]
+* Extensions > Install History: find breadcrumbs-seo-rdfa.ocmod.zip or breadcrumbs-seo-microdata.ocmod.zip and click [Uninstall]
 * Extensions > Modifications > [Refresh]
 * Go to Dashboard > [Developer Settings] > Theme [Refresh]
 * Go to Dashboard > [Developer Settings] > SASS [Refresh]
