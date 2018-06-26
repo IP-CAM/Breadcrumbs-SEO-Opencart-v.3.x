@@ -98,7 +98,7 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 
 #### Install
 * To begin, make backup, really, despite the fact that it is OCMOD!
-* Download [bin/breadcrumbs-seo.zip](https://github.com/underr-ua/oc3-breadcrumbs-seo/raw/master/bin/breadcrumbs-seo.zip)
+* Download [bin/breadcrumbs-seo.zip](https://github.com/underr-ua/ocmod3-breadcrumbs-seo/raw/master/bin/breadcrumbs-seo.zip)
 * Unpack it
 * Go to your OpenCart Admin Panel and open Extensions menu
 * Open Installer
@@ -116,7 +116,7 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 * Go to Dashboard > [Developer Settings] button > [Refresh] button
 
 #### Links
-* [github.com](https://github.com/underr-ua/oc3-breadcrumbs-seo/)
+* [github.com](https://github.com/underr-ua/ocmod3-breadcrumbs-seo/)
 * [opencart.com](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=33396)
 * [underr.space](https://underr.space/notes/projects/project-002.html)
 
