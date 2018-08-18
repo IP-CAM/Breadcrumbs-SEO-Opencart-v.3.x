@@ -8,8 +8,14 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 
 ## Features
 1. Adds structured data mark-up to breadcrumbs (Microdata or RDFa)
-2. Removes crumbs for the target pages that lead to themselves.
+2. Removes link for the target pages that lead to themselves.
 
+## History
+v1.1:
+* Fix: Microdata and RDFa markup improvement
+
+v1.0:
+* First release
 
 ## Install
 * To begin, make backup, really!
@@ -30,11 +36,13 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 * Go to Dashboard > [Developer Settings] > Theme [Refresh]
 * Go to Dashboard > [Developer Settings] > SASS [Refresh]
 
+## Demo links
+* [Microdata markup](http://051c5f20.freevar.com/www/microdata)
+* [RDFa markup](http://051c5f20.freevar.com/www/rdfa)
+
 ## Additional links
 * [opencart.com](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=33396)
 * [underr.space](https://underr.space/notes/projects/project-002.html)
 
 ## Donation
-<a href='https://ko-fi.com/X8X290YA' target='_blank'><img src='https://image.ibb.co/hmWnnc/kofi.png' border='0' alt='Buy Me a Coffee at ko-fi.com'/></a>
-
 <a href='https://www.liqpay.ua/en/checkout/card/underr' target='_blank'><img src='https://image.ibb.co/nA3HoS/liqpay.png' border='0' alt='Donate me with LiqPay'/></a>

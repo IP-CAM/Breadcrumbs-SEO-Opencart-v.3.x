@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  * Breadcrumbs SEO (RDFa) v1.0 (https://github.com/underr-ua/ocmod3-breadcrumbs-seo)
+  * Breadcrumbs SEO (RDFa) v1.1 (https://github.com/underr-ua/ocmod3-breadcrumbs-seo)
   * Copyright 2018 Andrii Burkatskyi aka underr
   * Licensed under MIT (https://raw.githubusercontent.com/underr-ua/ocmod3-breadcrumbs-seo/master/LICENSE)
 -->
 <modification>
     <name>[underr] Breadcrumbs SEO (RDFa)</name>
     <code>breadcrumbs-seo</code>
-    <version>1.0</version>
+    <version>1.1</version>
     <author>Andrii Burkatskyi aka underr</author>
     <link>https://github.com/underr-ua/ocmod3-breadcrumbs-seo</link>
 
@@ -16,11 +16,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/product/search.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -29,11 +27,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/product/category.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -42,11 +38,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/product/special.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -55,11 +49,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/product/manufacturer_list.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -68,11 +60,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/product/compare.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -81,11 +71,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/product/manufacturer_info.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -95,11 +83,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/product/product.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -108,11 +94,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/checkout/checkout.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -121,11 +105,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/checkout/cart.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -134,11 +116,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/common/success.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -148,11 +128,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/extension/module/buy.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -162,11 +140,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/affiliate/login.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -176,11 +152,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/affiliate/register.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -190,11 +164,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/error/not_found.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -204,11 +176,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/order_info.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -217,11 +187,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/affiliate.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -230,11 +198,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/order_list.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -243,11 +209,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/recurring_info.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -256,11 +220,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/tracking.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -269,11 +231,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/forgotten.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -283,11 +243,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/reward.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -296,11 +254,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/newsletter.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -309,11 +265,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/transaction.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -322,11 +276,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/reset.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -335,11 +287,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/password.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -348,11 +298,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/login.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -361,11 +309,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/voucher.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -374,11 +320,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/recurring_list.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -387,11 +331,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/address_form.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -400,11 +342,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/return_list.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -413,11 +353,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/return_form.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -426,11 +364,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/download.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -439,11 +375,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/address_list.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -452,11 +386,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/account.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -465,11 +397,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/return_info.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -478,11 +408,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/register.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -491,11 +419,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/edit.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -504,11 +430,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/account/wishlist.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -517,11 +441,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/information/tracking.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -530,11 +452,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/information/contact.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -543,11 +463,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/information/information.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
@@ -556,11 +474,9 @@
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">]]></add>
         </operation>
-    </file>
-    <file path="catalog/view/theme/*/template/information/sitemap.twig" error="skip">
         <operation error="skip">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
-            <add position="replace"><![CDATA[<li property="itemListElement" typeof="ListItem">{% if loop.last %}<span property="name">{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index }}"/></li>]]></add>
+            <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li typeof="ListItem" property="itemListElement">{% if loop.last %}<span property="item" typeof="WebPage" href="{{ breadcrumb.href }}" href="{{ breadcrumb.href }}"><span property="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" property="item" typeof="WebPage"><span property="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta property="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
         </operation>
     </file>
 
