@@ -11,11 +11,11 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 2. Removes link for the target pages that lead to themselves.
 
 ## Change log
-v1.1 (2018.08.20):
-* Fix: Markup improvements
+* v1.1 (2018.08.20):
+  * Fix: Markup improvements
 
-v1.0:
-* First release
+* v1.0:
+  * First release
 
 ## Install
 * To begin, make backup, really!
