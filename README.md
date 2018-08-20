@@ -10,9 +10,9 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 1. Adds structured data mark-up to breadcrumbs (Microdata or RDFa)
 2. Removes link for the target pages that lead to themselves.
 
-## History
-v1.1:
-* Fix: Microdata and RDFa markup improvement
+## Change log
+v1.1 (2018.08.20):
+* Fix: Markup improvements
 
 v1.0:
 * First release
@@ -36,11 +36,11 @@ v1.0:
 * Go to Dashboard > [Developer Settings] > Theme [Refresh]
 * Go to Dashboard > [Developer Settings] > SASS [Refresh]
 
-## Demo links
+## Demo
 * [Microdata markup](http://051c5f20.freevar.com/www/microdata)
-** [Structured Data Testing Tool - Google](https://search.google.com/structured-data/testing-tool/u/0/#url=http%3A%2F%2F051c5f20.freevar.com%2Fwww%2Fmicrodata%2Findex.php%3Froute%3Dproduct%2Fproduct%26path%3D18%26product_id%3D47)
+  * [Google Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/u/0/#url=http%3A%2F%2F051c5f20.freevar.com%2Fwww%2Fmicrodata%2Findex.php%3Froute%3Dproduct%2Fproduct%26path%3D18%26product_id%3D47)
 * [RDFa markup](http://051c5f20.freevar.com/www/rdfa)
-** [Structured Data Testing Tool - Google](https://search.google.com/structured-data/testing-tool/u/0/#url=http%3A%2F%2F051c5f20.freevar.com%2Fwww%2Frdfa%2Findex.php%3Froute%3Dproduct%2Fproduct%26path%3D18%26product_id%3D47)
+  * [Google Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/u/0/#url=http%3A%2F%2F051c5f20.freevar.com%2Fwww%2Frdfa%2Findex.php%3Froute%3Dproduct%2Fproduct%26path%3D18%26product_id%3D47)
 
 ## Additional links
 * [opencart.com](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=33396)
