@@ -5,7 +5,7 @@
   * Licensed under MIT (https://raw.githubusercontent.com/underr-ua/ocmod3-breadcrumbs-seo/master/LICENSE)
 -->
 <modification>
-    <name>[underr] Breadcrumbs SEO (Microdata markup)</name>
+    <name>[underr] Breadcrumbs SEO (Microdata)</name>
     <code>breadcrumbs-seo</code>
     <version>2.0</version>
     <author>Andrii Burkatskyi aka underr</author>
