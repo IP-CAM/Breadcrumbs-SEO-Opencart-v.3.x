@@ -6,17 +6,22 @@ There are two different version with Microdata and RDFa mark-up.
 
 Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 
+
 ## Features
-1. Adds structured data mark-up to breadcrumbs (Microdata or RDFa)
-2. Removes link for the target pages that lead to themselves.
+1. Adds structured data mark-up to breadcrumb items (Microdata or RDFa)
+2. Disable link for the target page item that lead to themselves.
+
 
 ## Change log
+* v1.2 (2018.09.08):
+  * Fix: XML-files improvement
 * v1.2 (2018.08.20):
   * Fix: RDFa markup fix
 * v1.1 (2018.08.20):
   * Fix: Markup improvements
-* v1.0:
+* v1.0 (2018.03.02):
   * First release
+
 
 ## Install
 * To begin, make backup, really!
@@ -29,6 +34,7 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 * Go to Dashboard > [Developer Settings] > Theme [Refresh]
 * Go to Dashboard > [Developer Settings] > SASS [Refresh]
 
+
 ## Uninstall
 * Make backup
 * OpenCart Admin -> Extensions menu > Installer
@@ -37,15 +43,18 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 * Go to Dashboard > [Developer Settings] > Theme [Refresh]
 * Go to Dashboard > [Developer Settings] > SASS [Refresh]
 
+
 ## Demo
 * [Microdata markup](http://051c5f20.freevar.com/www/microdata)
   * [Google Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/u/0/#url=http%3A%2F%2F051c5f20.freevar.com%2Fwww%2Fmicrodata%2Findex.php%3Froute%3Dproduct%2Fproduct%26path%3D18%26product_id%3D47)
 * [RDFa markup](http://051c5f20.freevar.com/www/rdfa)
   * [Google Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/u/0/#url=http%3A%2F%2F051c5f20.freevar.com%2Fwww%2Frdfa%2Findex.php%3Froute%3Dproduct%2Fproduct%26path%3D18%26product_id%3D47)
 
+
 ## Additional links
 * [opencart.com](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=33396)
 * [underr.space](https://underr.space/notes/projects/project-002.html)
+
 
 ## Donation
 <a href='https://www.liqpay.ua/en/checkout/card/underr' target='_blank'><img src='https://image.ibb.co/nA3HoS/liqpay.png' border='0' alt='Donate me with LiqPay'/></a>
