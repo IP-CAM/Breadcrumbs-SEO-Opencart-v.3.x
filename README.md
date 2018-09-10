@@ -1,29 +1,32 @@
 # Breadcrumbs-SEO
 
 ## Short description
-Free OCMOD modification for Opencart 3 that adds structured data mark-up for breadcrumbs.
-There are two different version with Microdata and RDFa mark-up.
+Free OCMOD modification for Opencart 3 that adds breadcrumb trail markup in the body of a webpage to categorize the information from the page in search results. Has two different types of markup - Microdata, RDFa.
 
 Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 
 
 ## Features
-1. Adds structured data mark-up to breadcrumb items (Microdata or RDFa)
-2. Disable link for the target page item that lead to themselves.
+1. Two separate extensions with Microdata and RDFa markups
+2. Does not add markup to the first breadcrumb
+3. Removes link from the last breadcrumb
 
 
 ## Change log
+* v1.3 (2018.09.10):
+  * RDFa fix
+  * Removed markup from unnecessary files
 * v1.2 (2018.09.08):
-  * Fix: XML-files improvement
+  * XML-files improvement
 * v1.2 (2018.08.20):
-  * Fix: RDFa markup fix
+  * RDFa markup fix
 * v1.1 (2018.08.20):
-  * Fix: Markup improvements
+  * Markup improvements
 * v1.0 (2018.03.02):
   * First release
 
 
-## Install
+## How to install
 * To begin, make backup, really!
 * Download zip-file : [bin/breadcrumbs-seo-microdata.ocmod.zip](https://github.com/underr-ua/ocmod3-breadcrumbs-seo/raw/master/bin/breadcrumbs-seo-microdata.ocmod.zip)
     or [bin/breadcrumbs-seo-rdfa.ocmod.zip](https://github.com/underr-ua/ocmod3-breadcrumbs-seo/raw/master/bin/breadcrumbs-seo-rdfa.ocmod.zip)
@@ -35,7 +38,7 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 * Go to Dashboard > [Developer Settings] > SASS [Refresh]
 
 
-## Uninstall
+## How to uninstall
 * Make backup
 * OpenCart Admin -> Extensions menu > Installer
 * Extensions > Install History: find breadcrumbs-seo-rdfa.ocmod.zip or breadcrumbs-seo-microdata.ocmod.zip and click [Uninstall]
