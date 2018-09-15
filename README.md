@@ -1,16 +1,15 @@
 # Breadcrumbs-SEO
 
-## Short description
-Free OCMOD modification for Opencart 3 that adds breadcrumb trail markup in the body of a webpage to categorize the information from the page in search results. Has two different types of markup - Microdata, RDFa.
+## Description
+Free extension for CMS Opencart 3 that adds markup in breadcrumb trails to categorize the information from the page in search results. Has two different versions with Microdata and RDFa markup.
 
 Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 
-
 ## Features
-1. Two separate extensions with Microdata and RDFa markups
-2. Does not add markup to the first breadcrumb
-3. Removes link from the last breadcrumb
-
+* Two separate extensions with Microdata and RDFa markups
+* Does not add markup to the first breadcrumb
+* Removes link from the last breadcrumb
+* Does not change original files - OCMOD modification
 
 ## Change log
 * v1.3 (2018.09.10):
@@ -25,7 +24,6 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 * v1.0 (2018.03.02):
   * First release
 
-
 ## How to install
 * To begin, make backup, really!
 * Download zip-file : [bin/breadcrumbs-seo-microdata.ocmod.zip](https://github.com/underr-ua/ocmod3-breadcrumbs-seo/raw/master/bin/breadcrumbs-seo-microdata.ocmod.zip)
@@ -37,7 +35,6 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 * Go to Dashboard > [Developer Settings] > Theme [Refresh]
 * Go to Dashboard > [Developer Settings] > SASS [Refresh]
 
-
 ## How to uninstall
 * Make backup
 * OpenCart Admin -> Extensions menu > Installer
@@ -46,18 +43,15 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 * Go to Dashboard > [Developer Settings] > Theme [Refresh]
 * Go to Dashboard > [Developer Settings] > SASS [Refresh]
 
-
 ## Demo
-* [Microdata markup](http://051c5f20.freevar.com/www/microdata)
-  * [Google Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/u/0/#url=http%3A%2F%2F051c5f20.freevar.com%2Fwww%2Fmicrodata%2Findex.php%3Froute%3Dproduct%2Fproduct%26path%3D18%26product_id%3D47)
-* [RDFa markup](http://051c5f20.freevar.com/www/rdfa)
-  * [Google Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/u/0/#url=http%3A%2F%2F051c5f20.freevar.com%2Fwww%2Frdfa%2Findex.php%3Froute%3Dproduct%2Fproduct%26path%3D18%26product_id%3D47)
-
+* [Microdata](http://051c5f20.freevar.com/www/microdata)
+  * [Google Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/u/0/#url=http%3A%2F%2F051c5f20.freevar.com%2Fwww%2Fmicrodata%2Findex.php%3Froute%3Dproduct%2Fproduct%26path%3D18%26product_id%3D47) markup
+* [RDFa](http://051c5f20.freevar.com/www/rdfa) markup
+* [Google Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/u/0/#url=http%3A%2F%2F051c5f20.freevar.com%2Fwww%2Frdfa%2Findex.php%3Froute%3Dproduct%2Fproduct%26path%3D18%26product_id%3D47)
 
 ## Additional links
 * [opencart.com](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=33396)
 * [underr.space](https://underr.space/notes/projects/project-002.html)
-
 
 ## Donation
 <a href='https://www.liqpay.ua/en/checkout/card/underr' target='_blank'><img src='https://image.ibb.co/nA3HoS/liqpay.png' border='0' alt='Donate me with LiqPay'/></a>
