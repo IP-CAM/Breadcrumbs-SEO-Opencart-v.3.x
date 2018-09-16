@@ -5,10 +5,10 @@ The Breadcrumbs SEO extension is for CMS Opencart 3. It adds markup in breadcrum
 Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 
 ## Features
-* Two separate extensions with Microdata and RDFa markups
-* Does not add markup to the first breadcrumb
-* Removes link from the last breadcrumb
-* Does not change original files - OCMOD modification
+* Two separate extensions with Microdata and RDFa markups.
+* Does not add markup to the first breadcrumb.
+* Removes link from the last breadcrumb.
+* Does not change original files - OCMOD modification.
 
 ## Change log
 * v1.3 (2018.09.10):
@@ -48,7 +48,7 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 * [RDFa](http://051c5f20.freevar.com/www/rdfa) markup
 * [Google Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/u/0/#url=http%3A%2F%2F051c5f20.freevar.com%2Fwww%2Frdfa%2Findex.php%3Froute%3Dproduct%2Fproduct%26path%3D18%26product_id%3D47)
 
-## Additional links
+## Links
 * [opencart.com](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=33396)
 * [underr.space](https://underr.space/notes/projects/project-002.html)
 
