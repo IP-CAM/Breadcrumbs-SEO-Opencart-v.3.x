@@ -44,7 +44,7 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 
 ## Live demo
 * [Microdata](http://051c5f20.freevar.com/www/microdata)
-* [RDFa](http://051c5f20.freevar.com/www/rdfa) markup
+* [RDFa](http://051c5f20.freevar.com/www/rdfa)
 
 ## Links
 * [opencart.com](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=33396)
