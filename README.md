@@ -12,16 +12,16 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 
 ## Change log
 * v1.3 (2018.09.10):
-  * RDFa fix
-  * Removed markup from unnecessary files
+  * RDFa fix.
+  * Removed markup from unnecessary files.
 * v1.2 (2018.09.08):
-  * XML-files improvement
+  * XML-files improvement.
 * v1.2 (2018.08.20):
-  * RDFa markup fix
+  * RDFa markup fix.
 * v1.1 (2018.08.20):
-  * Markup improvements
+  * Markup improvements.
 * v1.0 (2018.03.02):
-  * First release
+  * First release.
 
 ## How to install
 * To begin, make backup, really!
