@@ -11,7 +11,7 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 * Does not change original files - OCMOD modification.
 
 ## Change log
-* v1.3 (2018.09.10):
+* v1.3 (2018.09.19):
   * RDFa fix.
   * Removed markup from unnecessary files.
 * v1.2 (2018.09.08):
@@ -27,7 +27,7 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 * To begin, make backup, really!
 * Download zip-file : [bin/breadcrumbs-seo-microdata.ocmod.zip](https://github.com/underr-ua/ocmod3-breadcrumbs-seo/raw/master/bin/breadcrumbs-seo-microdata.ocmod.zip)
     or [bin/breadcrumbs-seo-rdfa.ocmod.zip](https://github.com/underr-ua/ocmod3-breadcrumbs-seo/raw/master/bin/breadcrumbs-seo-rdfa.ocmod.zip)
-* Open OpenCart Admin Panel
+* Open Admin Panel
 * Extensions > Installer > [Upload]: open the file
 * See the "Success: You have modified extensions!" message
 * Extensions > Modifications > [Refresh]
@@ -36,15 +36,15 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 
 ## How to uninstall
 * Make backup
-* OpenCart Admin -> Extensions menu > Installer
+* Admin -> Extensions menu > Installer
 * Extensions > Install History: find breadcrumbs-seo-rdfa.ocmod.zip or breadcrumbs-seo-microdata.ocmod.zip and click [Uninstall]
 * Extensions > Modifications > [Refresh]
 * Go to Dashboard > [Developer Settings] > Theme [Refresh]
 * Go to Dashboard > [Developer Settings] > SASS [Refresh]
 
 ## Live demo
-* [Microdata](http://051c5f20.freevar.com/www/microdata)
-* [RDFa](http://051c5f20.freevar.com/www/rdfa)
+* [Front Demo](http://051c5f20.freevar.com/www/microdata) - Microdata
+* [Front Demo](http://051c5f20.freevar.com/www/rdfa) - RDFa
 
 ## Links
 * [opencart.com](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=33396)

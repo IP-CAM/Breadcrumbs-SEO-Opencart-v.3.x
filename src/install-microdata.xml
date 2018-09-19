@@ -11,7 +11,7 @@
     <author>Andrii Burkatskyi aka underr</author>
     <link>https://github.com/underr-ua/ocmod3-breadcrumbs-seo</link>
 
-    <file path="catalog/view/theme/*/template/product/{category,compare,manufacturer_info,manufacturer_list,product,search,special}.twig" error="log">
+    <file path="catalog/view/theme/*/template/product/{category,manufacturer_info,manufacturer_list,product,special}.twig" error="log">
         <operation error="log">
             <search><![CDATA[<ul class="breadcrumb">]]></search>
             <add position="replace"><![CDATA[<ul class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">]]></add>
@@ -19,6 +19,13 @@
         <operation error="log">
             <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
             <add position="replace"><![CDATA[{% if loop.first %}<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>{% else %}<li itemtype="https://schema.org/ListItem" itemprop="itemListElement" itemscope>{% if loop.last %}<span itemtype="https://schema.org/Thing" itemprop="item" itemid="{{ breadcrumb.href }}" itemscope><span itemprop="name">{{ breadcrumb.text }}</span></span>{% else %}<a href="{{ breadcrumb.href }}" itemtype="https://schema.org/Thing" itemprop="item" itemid="{{ breadcrumb.href }}" itemscope><span itemprop="name">{{ breadcrumb.text }}</span></a>{% endif %}<meta itemprop="position" content="{{ loop.index - 1 }}" /></li>{% endif %}]]></add>
+        </operation>
+    </file>
+
+    <file path="catalog/view/theme/*/template/product/{compare,search}.twig" error="log">
+        <operation error="log">
+            <search><![CDATA[<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>]]></search>
+            <add position="replace"><![CDATA[<li>{% if loop.last %}<span>{{ breadcrumb.text }}</span>{% else %}<a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>{% endif %}</li>]]></add>
         </operation>
     </file>
 
