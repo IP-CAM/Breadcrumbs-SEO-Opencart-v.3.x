@@ -20,12 +20,12 @@ timestamp:
 	find . -exec touch -a -m -t $(datetime) {} \;
 
 makezip:
-	cp "$(src)/$(xml1)" install.xml && touch -a -m -t $(datetime) install.xml && zip -mjuX $(bin)/$(zip1) "install.xml"
-	cp "$(src)/$(xml2)" install.xml && touch -a -m -t $(datetime) install.xml && zip -mjuX $(bin)/$(zip2) "install.xml"
+	cp "$(src)/$(xml1)" install.xml && touch -a -m -t $(datetime) install.xml && zip -9mjuX $(bin)/$(zip1) "install.xml"
+	cp "$(src)/$(xml2)" install.xml && touch -a -m -t $(datetime) install.xml && zip -9mjuX $(bin)/$(zip2) "install.xml"
 
 addtext:
-	zip -juX $(bin)/$(zip1) "$(readme)" "$(license)"
-	zip -juX $(bin)/$(zip2) "$(readme)" "$(license)"
+	zip -9juX $(bin)/$(zip1) "$(readme)" "$(license)"
+	zip -9juX $(bin)/$(zip2) "$(readme)" "$(license)"
 
 clean:
 	@echo Cleaning...
