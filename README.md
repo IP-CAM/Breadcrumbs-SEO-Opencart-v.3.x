@@ -49,7 +49,7 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 * [underr.space](https://underr.space/notes/projects/project-002.html)
 
 ## License
-Licensed under [MIT](https://raw.githubusercontent.com/underr-ua/ocmod3-breadcrumbs-seo/master/LICENSE)
+Licensed under [MIT](https://raw.githubusercontent.com/underr-ua/ocmod3-breadcrumbs-seo/master/LICENSE.txt)
 
 ## Donation
 <a href='https://www.liqpay.ua/en/checkout/card/underr' target='_blank'><img src='https://image.ibb.co/nA3HoS/liqpay.png' border='0' alt='Donate me with LiqPay'/></a>
