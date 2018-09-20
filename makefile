@@ -17,12 +17,12 @@ makedir:
 	mkdir -p $(bin)
 
 makezip:
-	cp "$(src)/$(xml1)" "install.xml" && zip -9mqj $(bin)/$(zip1) "install.xml"
-	cp "$(src)/$(xml2)" "install.xml" && zip -9mqj $(bin)/$(zip2) "install.xml"
+	cp "$(src)/$(xml1)" "install.xml" && zip -9mqjX $(bin)/$(zip1) "install.xml"
+	cp "$(src)/$(xml2)" "install.xml" && zip -9mqjX $(bin)/$(zip2) "install.xml"
 
 addtext:
-	zip -9 -j $(bin)/$(zip1) "$(readme)" "$(license)"
-	zip -9 -j $(bin)/$(zip2) "$(readme)" "$(license)"
+	zip -9jqX $(bin)/$(zip1) "$(readme)" "$(license)"
+	zip -9jqX $(bin)/$(zip2) "$(readme)" "$(license)"
 
 clean:
 	@echo Cleaning...
