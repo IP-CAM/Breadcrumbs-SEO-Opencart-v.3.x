@@ -1,5 +1,5 @@
 # Copyright 2018 Andrii Burkatskyi aka underr
-# Licensed under MIT (https://raw.githubusercontent.com/underr-ua/ocmod3-breadcrumbs-seo/master/LICENSE.txt)
+# Licensed under MIT - https://raw.githubusercontent.com/underr-ua/ocmod3-breadcrumbs-seo/master/LICENSE.txt
 
 zip1="breadcrumbs-seo-microdata.ocmod.zip"
 xml1="install-microdata.xml"
