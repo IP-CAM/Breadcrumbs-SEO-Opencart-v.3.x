@@ -30,8 +30,3 @@ clean:
 	@rm -f "$(src)"/*.zip
 	@rm -f "$(src)/$(license)"
 	@rm -f "$(src)/$(readme)"
-
-
-
-
-
