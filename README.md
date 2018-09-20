@@ -41,12 +41,12 @@ No need to configure.
 * Admin > Dashboard > [Developer Settings] > [Refresh].
 
 ## Live demo
-[Front Demo](http://051c5f20.freevar.com/www/microdata) - Microdata
-[Front Demo](http://051c5f20.freevar.com/www/rdfa) - RDFa
+* [Front Demo](http://051c5f20.freevar.com/www/microdata) - Microdata
+* [Front Demo](http://051c5f20.freevar.com/www/rdfa) - RDFa
 
 ## Links
-[Opencart Marketplace](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=33396)
-[underr.space](https://underr.space/notes/projects/project-002.html)
+* [Opencart Marketplace](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=33396)
+* [underr.space](https://underr.space/notes/projects/project-002.html)
 
 ## License
 Licensed under [MIT](https://raw.githubusercontent.com/underr-ua/ocmod3-breadcrumbs-seo/master/LICENSE.txt)
