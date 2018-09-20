@@ -7,22 +7,25 @@ zip2="breadcrumbs-seo-rdfa.ocmod.zip"
 xml2="install-rdfa.xml"
 license=LICENSE.txt
 readme=README.md
-
+datetime=201801010000.00
 src="src"
 bin="bin"
 
-all: clean makedir makezip addtext
+all: clean makedir timestamp makezip addtext
 
 makedir:
 	mkdir -p $(bin)
 
+timestamp:
+	find . -exec touch -a -m -t $(datetime) {} \;
+
 makezip:
-	cp "$(src)/$(xml1)" "install.xml" && zip -9mqjX $(bin)/$(zip1) "install.xml"
-	cp "$(src)/$(xml2)" "install.xml" && zip -9mqjX $(bin)/$(zip2) "install.xml"
+	cp "$(src)/$(xml1)" install.xml && touch -a -m -t $(datetime) install.xml && zip -mjuX $(bin)/$(zip1) "install.xml"
+	cp "$(src)/$(xml2)" install.xml && touch -a -m -t $(datetime) install.xml && zip -mjuX $(bin)/$(zip2) "install.xml"
 
 addtext:
-	zip -9jqX $(bin)/$(zip1) "$(readme)" "$(license)"
-	zip -9jqX $(bin)/$(zip2) "$(readme)" "$(license)"
+	zip -juX $(bin)/$(zip1) "$(readme)" "$(license)"
+	zip -juX $(bin)/$(zip2) "$(readme)" "$(license)"
 
 clean:
 	@echo Cleaning...
