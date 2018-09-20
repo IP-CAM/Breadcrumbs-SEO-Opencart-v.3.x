@@ -2,7 +2,7 @@
 
 ## Description
 The Breadcrumbs SEO extension is for CMS Opencart 3. It adds markup in breadcrumb trails to categorize the information from the page in search results. Has two different versions with Microdata and RDFa markup.
-The extension has been tested with OC 3.0.2.0 only, but should work with other OC 3.x versions
+The extension has been tested with OC 3.0.2.0 only, but should work with other OC 3.x versions.
 
 ## Features
 * Two separate extensions with Microdata and RDFa markups.
