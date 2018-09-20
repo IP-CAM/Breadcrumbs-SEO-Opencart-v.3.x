@@ -52,4 +52,4 @@ No need to configure.
 Licensed under [MIT](https://raw.githubusercontent.com/underr-ua/ocmod3-breadcrumbs-seo/master/LICENSE.txt)
 
 ## Donation
-[![Donate me with LiqPay][https://image.ibb.co/nA3HoS/liqpay.png]][https://www.liqpay.ua/en/checkout/card/underr]
+[![Donate me with LiqPay](https://image.ibb.co/nA3HoS/liqpay.png)](https://www.liqpay.ua/en/checkout/card/underr)
