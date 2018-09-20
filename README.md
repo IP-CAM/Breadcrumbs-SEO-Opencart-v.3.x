@@ -25,31 +25,31 @@ Have been tested with 3.0.2.0 only, but should work with other OC 3.x versions
 
 ## How to install
 * To begin, make backup, really!
-* Open Admin Panel
-* Admin > Extensions > Installer > [Upload]: open the extension file
-* Admin > Extensions > Modifications > [Refresh]
-* Admin > Dashboard > [Developer Settings] > [Refresh]
+* Open Admin Panel.
+* Admin > Extensions > Installer > [Upload]: open the extension file.
+* Admin > Extensions > Modifications > [Refresh].
+* Admin > Dashboard > [Developer Settings] > [Refresh].
 
 ## How to configure
-* No need to configure
+No need to configure.
 
 ## How to uninstall
-* Make backup
-* Open Admin Panel
-* Admin > Extensions > Installer > Install History > find the extension file > [Uninstall]
-* Admin > Extensions > Modifications > [Refresh]
-* Admin > Dashboard > [Developer Settings] > [Refresh]
+* Make backup.
+* Open Admin Panel.
+* Admin > Extensions > Installer > Install History > find the extension file > [Uninstall].
+* Admin > Extensions > Modifications > [Refresh].
+* Admin > Dashboard > [Developer Settings] > [Refresh].
 
 ## Live demo
-* [Front Demo](http://051c5f20.freevar.com/www/microdata) - Microdata
-* [Front Demo](http://051c5f20.freevar.com/www/rdfa) - RDFa
+[Front Demo](http://051c5f20.freevar.com/www/microdata) - Microdata
+[Front Demo](http://051c5f20.freevar.com/www/rdfa) - RDFa
 
 ## Links
-* [opencart.com](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=33396)
-* [underr.space](https://underr.space/notes/projects/project-002.html)
+[Opencart Marketplace](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=33396)
+[underr.space](https://underr.space/notes/projects/project-002.html)
 
 ## License
 Licensed under [MIT](https://raw.githubusercontent.com/underr-ua/ocmod3-breadcrumbs-seo/master/LICENSE.txt)
 
 ## Donation
-<a href='https://www.liqpay.ua/en/checkout/card/underr' target='_blank'><img src='https://image.ibb.co/nA3HoS/liqpay.png' border='0' alt='Donate me with LiqPay'/></a>
+[![Donate me with LiqPay][https://image.ibb.co/nA3HoS/liqpay.png]][https://www.liqpay.ua/en/checkout/card/underr]
