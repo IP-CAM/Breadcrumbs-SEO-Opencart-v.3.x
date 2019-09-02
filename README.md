@@ -1,12 +1,11 @@
 # Breadcrumbs SEO
 
 ## Description
-The Breadcrumbs SEO extension is for CMS Opencart 3. It adds markup in breadcrumb trails to categorize the information from the page in search results. Has two different versions for [Microdata](https://en.wikipedia.org/wiki/Microdata_(HTML)) and [RDFa](https://en.wikipedia.org/wiki/RDFa) markup.
+The Breadcrumbs SEO extension is for CMS Opencart 3.x. It adds markup in breadcrumb trails to categorize the information from the page in search results.
 
 ## Features
-* Uses [schema.org](https://schema.org/)
-* Doesn't add markup to the first breadcrumb.
-* Removes link from the last breadcrumb.
+* Two types of markup - [Microdata](https://en.wikipedia.org/wiki/Microdata_(HTML)) or [RDFa](https://en.wikipedia.org/wiki/RDFa).
+* Removes link from the last item of a breadcrumb trail.
 * Does not change original files - OCMOD modification.
 
 ## Change log
