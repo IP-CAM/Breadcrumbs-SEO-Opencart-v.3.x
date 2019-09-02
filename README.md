@@ -1,12 +1,11 @@
 # Breadcrumbs SEO
 
 ## Description
-The Breadcrumbs SEO extension is for CMS Opencart 3. It adds markup in breadcrumb trails to categorize the information from the page in search results. Has two different versions with Microdata and RDFa markup.
-The extension has been tested with OC 3.0.2.0 only, but should work with other OC 3.x versions.
+The Breadcrumbs SEO extension is for CMS Opencart 3. It adds markup in breadcrumb trails to categorize the information from the page in search results. Has two different versions for [Microdata](https://en.wikipedia.org/wiki/Microdata_(HTML)) and [RDFa](https://en.wikipedia.org/wiki/RDFa) markup.
 
 ## Features
-* Two separate extensions with Microdata and RDFa markups.
-* Does not add markup to the first breadcrumb.
+* Uses [schema.org](https://schema.org/)
+* Doesn't add markup to the first breadcrumb.
 * Removes link from the last breadcrumb.
 * Does not change original files - OCMOD modification.
 
@@ -40,10 +39,6 @@ No need to configure.
 * Admin > Extensions > Modifications > [Refresh].
 * Admin > Dashboard > [Developer Settings] > [Refresh].
 
-## Live demo
-* [Front Demo](http://051c5f20.freevar.com/www/microdata) - Microdata
-* [Front Demo](http://051c5f20.freevar.com/www/rdfa) - RDFa
-
 ## Links
 * [Opencart Marketplace](https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=33396)
 * [underr.space](https://underr.space/notes/projects/project-002.html)
@@ -53,3 +48,4 @@ Licensed under [MIT](https://raw.githubusercontent.com/underr-ua/ocmod3-breadcru
 
 ## Donation
 [![Donate me with LiqPay](https://image.ibb.co/nA3HoS/liqpay.png)](https://www.liqpay.ua/en/checkout/card/underr)
+[![Patreon](https://i.ibb.co/RvTchQm/become-a-patron-button.png)](https://www.patreon.com/underr)
